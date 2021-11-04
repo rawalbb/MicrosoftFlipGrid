@@ -37,23 +37,23 @@
                                 <rect key="frame" x="0.0" y="185.5" width="414" height="676.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUz-7e-Klk">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1024"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="558"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aAP-WS-Z2M">
-                                                <rect key="frame" x="48" y="0.0" width="318" height="952"/>
+                                                <rect key="frame" x="48" y="0.0" width="318" height="486"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yIk-gv-bvU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="226"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="109.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Bf-US-oMg" customClass="TitleTextField" customModule="RawalFlipGrid" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="168"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="51.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="First Name"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xae-hf-PRb">
-                                                                <rect key="frame" x="0.0" y="176" width="318" height="50"/>
+                                                                <rect key="frame" x="0.0" y="59.5" width="318" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -61,17 +61,17 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bd7-Jh-RyT">
-                                                        <rect key="frame" x="0.0" y="242" width="318" height="226"/>
+                                                        <rect key="frame" x="0.0" y="125.5" width="318" height="109.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtd-Q3-hnR" customClass="TitleTextField" customModule="RawalFlipGrid" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="168"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="51.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email Address"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shn-Fs-zqN">
-                                                                <rect key="frame" x="0.0" y="176" width="318" height="50"/>
+                                                                <rect key="frame" x="0.0" y="59.5" width="318" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -79,17 +79,17 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="26U-Ag-1RI">
-                                                        <rect key="frame" x="0.0" y="484" width="318" height="226"/>
+                                                        <rect key="frame" x="0.0" y="251" width="318" height="109.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjC-nW-AEH" customClass="TitleTextField" customModule="RawalFlipGrid" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="168"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="51.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPp-8u-Kbj">
-                                                                <rect key="frame" x="0.0" y="176" width="318" height="50"/>
+                                                                <rect key="frame" x="0.0" y="59.5" width="318" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -97,17 +97,17 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xyF-Mc-llZ">
-                                                        <rect key="frame" x="0.0" y="726" width="318" height="226"/>
+                                                        <rect key="frame" x="0.0" y="376.5" width="318" height="109.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FK-qL-oxk" customClass="TitleTextField" customModule="RawalFlipGrid" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="168"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="318" height="51.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Website"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxU-Gb-WET">
-                                                                <rect key="frame" x="0.0" y="176" width="318" height="50"/>
+                                                                <rect key="frame" x="0.0" y="59.5" width="318" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOy-BT-QCS" userLabel="RegisterButton" customClass="ActionButton" customModule="RawalFlipGrid" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="980" width="318" height="44"/>
+                                                <rect key="frame" x="48" y="514" width="318" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="YI3-2n-DAl"/>
                                                 </constraints>
@@ -182,52 +182,95 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="9g3-qI-JoA">
             <objects>
-                <viewController id="3Yh-vZ-HTY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmationViewController" id="3Yh-vZ-HTY" customClass="ConfirmationViewController" customModule="RawalFlipGrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kRo-D5-Pfl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p74-39-jja">
-                                <rect key="frame" x="213" y="299" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLM-xI-7i2">
-                                <rect key="frame" x="233" y="354" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6P-3Q-tkQ">
-                                <rect key="frame" x="213" y="472" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO2-6F-FBS">
-                                <rect key="frame" x="163" y="547" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="lDe-vv-oNq">
+                                <rect key="frame" x="24" y="68" width="366" height="115.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Audrey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p74-39-jja">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your super-awesome portfolio has been successfully submitted! The details below will be public within your community!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLM-xI-7i2">
+                                        <rect key="frame" x="0.0" y="54.5" width="350.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0lg-86-QOw">
+                                <rect key="frame" x="24" y="195.5" width="366" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6P-3Q-tkQ">
+                                        <rect key="frame" x="158" y="0.0" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi8-86-sG2" userLabel="RegisterButton" customClass="ActionButton" customModule="RawalFlipGrid" customModuleProvider="target">
+                                <rect key="frame" x="48" y="770" width="318" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="oHl-d4-Ada"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="requestAccountClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDF-t7-09z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EUi-Es-laS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0lg-86-QOw" firstAttribute="top" secondItem="lDe-vv-oNq" secondAttribute="bottom" constant="12" id="1hb-BH-DBm"/>
+                            <constraint firstItem="EUi-Es-laS" firstAttribute="bottom" secondItem="Hi8-86-sG2" secondAttribute="bottom" constant="48" id="5Kb-ON-NAT"/>
+                            <constraint firstItem="EUi-Es-laS" firstAttribute="trailing" secondItem="lDe-vv-oNq" secondAttribute="trailing" constant="24" id="7oF-Pk-OWl"/>
+                            <constraint firstItem="EUi-Es-laS" firstAttribute="trailing" secondItem="0lg-86-QOw" secondAttribute="trailing" constant="24" id="BAY-Da-1oh"/>
+                            <constraint firstItem="lDe-vv-oNq" firstAttribute="leading" secondItem="EUi-Es-laS" secondAttribute="leading" constant="24" id="KoC-zf-N3c"/>
+                            <constraint firstItem="lDe-vv-oNq" firstAttribute="top" secondItem="EUi-Es-laS" secondAttribute="top" constant="24" id="gGL-CK-uGb"/>
+                            <constraint firstItem="Hi8-86-sG2" firstAttribute="leading" secondItem="EUi-Es-laS" secondAttribute="leading" constant="48" id="sv4-Co-RNb"/>
+                            <constraint firstItem="EUi-Es-laS" firstAttribute="trailing" secondItem="Hi8-86-sG2" secondAttribute="trailing" constant="48" id="t61-3d-ckN"/>
+                            <constraint firstItem="0lg-86-QOw" firstAttribute="leading" secondItem="EUi-Es-laS" secondAttribute="leading" constant="24" id="v8D-bf-CHv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmationStackView" destination="0lg-86-QOw" id="wc7-CW-Hw0"/>
+                        <outlet property="headingLabel" destination="p74-39-jja" id="PUT-eO-Zds"/>
+                        <outlet property="subHeadingLabel" destination="bLM-xI-7i2" id="xiM-1c-n8O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKp-VN-dSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1139" y="98"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="4Bf-US-oMg">
+            <size key="intrinsicContentSize" width="318" height="44.3203125"/>
+        </designable>
+        <designable name="4FK-qL-oxk">
+            <size key="intrinsicContentSize" width="318" height="44.3203125"/>
+        </designable>
+        <designable name="Vtd-Q3-hnR">
+            <size key="intrinsicContentSize" width="318" height="44.3203125"/>
+        </designable>
+        <designable name="hjC-nW-AEH">
+            <size key="intrinsicContentSize" width="318" height="44.3203125"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

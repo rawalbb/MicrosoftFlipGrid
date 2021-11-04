@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  RawalFlipGrid
 //
-//  Created by Nirali Rawal on 10/22/21.
+//  Created by Bansri Rawal on 10/22/21.
 //
 
 import UIKit
@@ -10,34 +10,25 @@ import UIKit
 class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var headerLabel: UILabel!
-    
     @IBOutlet weak var headerSubLabel: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var firstNameField: TitleTextField!
-
-    
     @IBOutlet weak var emailField: TitleTextField!
-    
     @IBOutlet weak var emailErrorLabel: UILabel!
-    
     @IBOutlet weak var passwordField: TitleTextField!
-    
     @IBOutlet weak var passwordErrorLabel: UILabel!
-    
-    
     @IBOutlet weak var websiteField: TitleTextField!
-    
-    
     @IBOutlet weak var registerButton: UIButton!
     
     var activeField: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         setupView()
+        setupAccessibility()
     }
     
     func setupView(){
@@ -58,10 +49,7 @@ class RegistrationViewController: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         websiteField.delegate = self
-        
-        
-        
-        
+
         emailErrorLabel.style = .appP2
         passwordErrorLabel.style = .appP2
         emailErrorLabel.textColor = UIColor.red
@@ -83,11 +71,9 @@ class RegistrationViewController: UIViewController {
         emailField.returnKeyType = .next
         
         passwordField.textContentType = .name
-        //passwordField.textField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; required: special; minlength: 12")
         passwordField.autocapitalizationType = .none
         passwordField.returnKeyType = .next
-        //passwordField.textField.isSecureTextEntry = true
-        
+        passwordField.textField.textContentType = .password        
         websiteField.textContentType = .name
         websiteField.keyboardType = .asciiCapable
         websiteField.autocapitalizationType = .none
@@ -108,8 +94,15 @@ class RegistrationViewController: UIViewController {
         emailField.layer.cornerRadius = 12.0
         passwordField.layer.cornerRadius = 12.0
         websiteField.layer.cornerRadius = 12.0
-        
         registerButton.layer.cornerRadius = 12
+    }
+    
+    func setupAccessibility(){
+        emailField.accessibilityIdentifier = AccessibilityIdentifiers.RegisterScreen.registerEmailField
+        passwordField.accessibilityIdentifier = AccessibilityIdentifiers.RegisterScreen.registerPasswordField
+        firstNameField.accessibilityIdentifier = AccessibilityIdentifiers.RegisterScreen.registerNameField
+        websiteField.accessibilityIdentifier = AccessibilityIdentifiers.RegisterScreen.registerWebsiteField
+        registerButton.accessibilityIdentifier = AccessibilityIdentifiers.RegisterScreen.registerButton
     }
     
     @IBAction func requestAccountClick(_ sender: Any){
@@ -137,20 +130,18 @@ class RegistrationViewController: UIViewController {
             return
         }
         
-        guard email.validatePassword() else {
+        guard password.validatePassword() else {
             createAndShowAlert(title: "Invalid Password", message: "The password you entered is not valid. Please enter a valid password and try again.", actionTitle: "OK") { _ in
                 self.emailField.becomeFirstResponder()
             }
             return
         }
+        
+        view.endEditing(true)
+        sendRegistrationRequest(name: firstNameField.text, email: email, password: password, website: websiteField.text)
     }
     
-    func createAndShowAlert(title: String, message: String, actionTitle: String, handler: ((UIAlertAction) -> Void)? = nil){
-        let alert  = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: actionTitle, style: .default, handler: handler))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
+    
     
     func validate(inputField: UIView, textStr: String) -> Bool{
         var errorStr: String? = nil
@@ -209,9 +200,18 @@ class RegistrationViewController: UIViewController {
         
         let request = RegistrationRequest(firstName: name, emailAddress: email, password: password, website: website)
         
+        let confirmationValue = ConfirmationData(email: request.emailAddress, name: request.firstName, website: request.website)
+        
+        guard let confirmationVC = UIViewController.instantiateViewController(storyBoard: "Main", withIdentifier: "ConfirmationViewController") as? ConfirmationViewController else { return }
+        confirmationVC.modalTransitionStyle = .crossDissolve
+        confirmationVC.modalPresentationStyle = .overFullScreen
+        confirmationVC.confirmedData = confirmationValue
+        self.present(confirmationVC, animated: true, completion: nil)
     }
     
 }
+
+//MARK: -Keyboard
 extension RegistrationViewController {
     private func registerforKeyboardNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)),
@@ -271,10 +271,9 @@ extension RegistrationViewController: TitleTextFieldDelegate {
             websiteField.becomeFirstResponder()
         case websiteField:
             websiteField.textField.resignFirstResponder()
-            //self.requestAccountButtonTapped(titleTextField)
+            self.requestAccountClick(titleTextField)
         default:
             print("Default")
-//            textField.resignFirstResponder()
         }
         
         return false
@@ -308,41 +307,3 @@ extension RegistrationViewController: TitleTextFieldDelegate {
 }
 
 
-extension String{
-    func validateEmail() -> Bool{
-            let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-            return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
-        }
-    
-    
-    func validatePassword() -> Bool{
-        let charLengthRegex = "^.{12,}$"
-        let specCharRegex = "^.*([!@#%*?&$^]).*$"
-        let upperCharRegex = "^(.*[A-Z].*)$"
-        
-//        let lowerCharRegex = "^(.*[a-z].*)$"
-//        let numRegex = "^(.*[0-9].*)$"
-        let charValidator = NSPredicate(format: "SELF MATCHES %@", charLengthRegex).evaluate(with: self)
-        let specCharValidator = NSPredicate(format: "SELF MATCHES %@", specCharRegex).evaluate(with: self)
-//        let upperCharValidator = NSPredicate(format: "SELF MATCHES %@", upperCharRegex).evaluate(with: self)
-//        let lowerCharValidator = NSPredicate(format: "SELF MATCHES %@", lowerCharRegex).evaluate(with: self)
-//        let numValidator = NSPredicate(format: "SELF MATCHES %@", numRegex).evaluate(with: self)
-        
-        return charValidator && specCharValidator
-        //&& upperCharValidator && lowerCharValidator && numValidator
-    }
-}
-
-
-extension UIViewController{
-    func hideKeyboardWhenTappedAround(tapGestureDelegate delegate: UIGestureRecognizerDelegate? = nil){
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        tap.delegate = delegate
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard(){
-        view.endEditing(true)
-    }
-}

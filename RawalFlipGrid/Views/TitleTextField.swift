@@ -2,12 +2,12 @@
 //  TitleTextField.swift
 //  RawalFlipGrid
 //
-//  Created by Nirali Rawal on 10/22/21.
+//  Created by Bansri Rawal on 10/22/21.
 //
 
 import UIKit
 
-protocol TitleTextFieldDelegate: class {
+protocol TitleTextFieldDelegate: AnyObject {
     func textFieldDidBeginEditing(_ titleTextField: TitleTextField)
     func textFieldDidEndEditing(_ titleTextField: TitleTextField)
 

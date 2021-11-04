@@ -2,7 +2,7 @@
 //  RegistrationFonts.swift
 //  RawalFlipGrid
 //
-//  Created by Nirali Rawal on 10/22/21.
+//  Created by Bansri Rawal on 10/22/21.
 //
 
 import UIKit

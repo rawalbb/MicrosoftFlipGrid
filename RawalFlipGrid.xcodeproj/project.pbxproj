@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961C398A27339162000A4E2B /* RawalFlipGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C398927339162000A4E2B /* RawalFlipGridUITests.swift */; };
+		961C398C27339162000A4E2B /* RawalFlipGridUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C398B27339162000A4E2B /* RawalFlipGridUITestsLaunchTests.swift */; };
+		961C3993273391A4000A4E2B /* RegistrationUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C3992273391A4000A4E2B /* RegistrationUITest.swift */; };
+		961C39952733932F000A4E2B /* AccessibilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C39942733932F000A4E2B /* AccessibilityConstants.swift */; };
+		961C3996273394AD000A4E2B /* AccessibilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C39942733932F000A4E2B /* AccessibilityConstants.swift */; };
+		961C399827339DD9000A4E2B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C399727339DD9000A4E2B /* UIViewController+Extension.swift */; };
+		961C399A27339E4F000A4E2B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C399927339E4F000A4E2B /* String+Extension.swift */; };
 		96B8D00A2723117D00E1CBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8D0092723117D00E1CBE6 /* AppDelegate.swift */; };
 		96B8D00C2723117D00E1CBE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8D00B2723117D00E1CBE6 /* SceneDelegate.swift */; };
 		96B8D00E2723117D00E1CBE6 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8D00D2723117D00E1CBE6 /* RegistrationViewController.swift */; };
@@ -31,7 +38,24 @@
 		96CE80F02724C1A400BF0447 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE80EF2724C1A400BF0447 /* ConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		961C398D27339162000A4E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B8CFFE2723117D00E1CBE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96B8D0052723117D00E1CBE6;
+			remoteInfo = RawalFlipGrid;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		961C398727339162000A4E2B /* RawalFlipGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawalFlipGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961C398927339162000A4E2B /* RawalFlipGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawalFlipGridUITests.swift; sourceTree = "<group>"; };
+		961C398B27339162000A4E2B /* RawalFlipGridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawalFlipGridUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		961C3992273391A4000A4E2B /* RegistrationUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUITest.swift; sourceTree = "<group>"; };
+		961C39942733932F000A4E2B /* AccessibilityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityConstants.swift; sourceTree = "<group>"; };
+		961C399727339DD9000A4E2B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		961C399927339E4F000A4E2B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		96B8D0062723117D00E1CBE6 /* RawalFlipGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawalFlipGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B8D0092723117D00E1CBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B8D00B2723117D00E1CBE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		961C398427339162000A4E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96B8D0032723117D00E1CBE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +100,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961C398827339162000A4E2B /* RawalFlipGridUITests */ = {
+			isa = PBXGroup;
+			children = (
+				961C398927339162000A4E2B /* RawalFlipGridUITests.swift */,
+				961C398B27339162000A4E2B /* RawalFlipGridUITestsLaunchTests.swift */,
+				961C3992273391A4000A4E2B /* RegistrationUITest.swift */,
+			);
+			path = RawalFlipGridUITests;
+			sourceTree = "<group>";
+		};
 		96B8CFFD2723117D00E1CBE6 = {
 			isa = PBXGroup;
 			children = (
 				96B8D0082723117D00E1CBE6 /* RawalFlipGrid */,
+				961C398827339162000A4E2B /* RawalFlipGridUITests */,
 				96B8D0072723117D00E1CBE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				96B8D0062723117D00E1CBE6 /* RawalFlipGrid.app */,
+				961C398727339162000A4E2B /* RawalFlipGridUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +136,7 @@
 				96B8D020272312D400E1CBE6 /* Views */,
 				96B8D01F272311D800E1CBE6 /* Model */,
 				96B8D01E272311CD00E1CBE6 /* Networking */,
-				96B8D01D272311B900E1CBE6 /* ViewController */,
+				96B8D01D272311B900E1CBE6 /* ViewControllers */,
 				96B8D0092723117D00E1CBE6 /* AppDelegate.swift */,
 				96B8D00B2723117D00E1CBE6 /* SceneDelegate.swift */,
 				96B8D00F2723117D00E1CBE6 /* Main.storyboard */,
@@ -104,13 +147,13 @@
 			path = RawalFlipGrid;
 			sourceTree = "<group>";
 		};
-		96B8D01D272311B900E1CBE6 /* ViewController */ = {
+		96B8D01D272311B900E1CBE6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				96B8D00D2723117D00E1CBE6 /* RegistrationViewController.swift */,
 				96CE80EF2724C1A400BF0447 /* ConfirmationViewController.swift */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		96B8D01E272311CD00E1CBE6 /* Networking */ = {
@@ -159,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				96B8D02C27231ADB00E1CBE6 /* RegistrationFonts.swift */,
+				961C39942733932F000A4E2B /* AccessibilityConstants.swift */,
+				961C399727339DD9000A4E2B /* UIViewController+Extension.swift */,
+				961C399927339E4F000A4E2B /* String+Extension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -166,6 +212,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		961C398627339162000A4E2B /* RawalFlipGridUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961C399127339162000A4E2B /* Build configuration list for PBXNativeTarget "RawalFlipGridUITests" */;
+			buildPhases = (
+				961C398327339162000A4E2B /* Sources */,
+				961C398427339162000A4E2B /* Frameworks */,
+				961C398527339162000A4E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				961C398E27339162000A4E2B /* PBXTargetDependency */,
+			);
+			name = RawalFlipGridUITests;
+			productName = RawalFlipGridUITests;
+			productReference = 961C398727339162000A4E2B /* RawalFlipGridUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		96B8D0052723117D00E1CBE6 /* RawalFlipGrid */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96B8D01A2723118300E1CBE6 /* Build configuration list for PBXNativeTarget "RawalFlipGrid" */;
@@ -193,6 +257,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					961C398627339162000A4E2B = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 96B8D0052723117D00E1CBE6;
+					};
 					96B8D0052723117D00E1CBE6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -212,11 +280,19 @@
 			projectRoot = "";
 			targets = (
 				96B8D0052723117D00E1CBE6 /* RawalFlipGrid */,
+				961C398627339162000A4E2B /* RawalFlipGridUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		961C398527339162000A4E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96B8D0042723117D00E1CBE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,16 +314,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		961C398327339162000A4E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961C3996273394AD000A4E2B /* AccessibilityConstants.swift in Sources */,
+				961C398A27339162000A4E2B /* RawalFlipGridUITests.swift in Sources */,
+				961C398C27339162000A4E2B /* RawalFlipGridUITestsLaunchTests.swift in Sources */,
+				961C3993273391A4000A4E2B /* RegistrationUITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96B8D0022723117D00E1CBE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				96CE80EC2724BF8D00BF0447 /* NetworkService.swift in Sources */,
+				961C399827339DD9000A4E2B /* UIViewController+Extension.swift in Sources */,
 				96B8D02D27231ADB00E1CBE6 /* RegistrationFonts.swift in Sources */,
 				96B8D00E2723117D00E1CBE6 /* RegistrationViewController.swift in Sources */,
 				96B8D00A2723117D00E1CBE6 /* AppDelegate.swift in Sources */,
+				961C39952733932F000A4E2B /* AccessibilityConstants.swift in Sources */,
 				96CE80F02724C1A400BF0447 /* ConfirmationViewController.swift in Sources */,
 				96CE80E52724BD7200BF0447 /* ModelHelpers.swift in Sources */,
+				961C399A27339E4F000A4E2B /* String+Extension.swift in Sources */,
 				96CE80EA2724BF2C00BF0447 /* RegistrationService.swift in Sources */,
 				96B8D022272312E800E1CBE6 /* TitleTextField.swift in Sources */,
 				96B8D00C2723117D00E1CBE6 /* SceneDelegate.swift in Sources */,
@@ -257,6 +347,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		961C398E27339162000A4E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96B8D0052723117D00E1CBE6 /* RawalFlipGrid */;
+			targetProxy = 961C398D27339162000A4E2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		96B8D00F2723117D00E1CBE6 /* Main.storyboard */ = {
@@ -278,6 +376,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		961C398F27339162000A4E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42YBZZURTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bunz.RawalFlipGridUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RawalFlipGrid;
+			};
+			name = Debug;
+		};
+		961C399027339162000A4E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42YBZZURTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bunz.RawalFlipGridUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RawalFlipGrid;
+			};
+			name = Release;
+		};
 		96B8D0182723118300E1CBE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -453,6 +595,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		961C399127339162000A4E2B /* Build configuration list for PBXNativeTarget "RawalFlipGridUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961C398F27339162000A4E2B /* Debug */,
+				961C399027339162000A4E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		96B8D0012723117D00E1CBE6 /* Build configuration list for PBXProject "RawalFlipGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
